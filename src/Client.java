@@ -21,18 +21,14 @@ public class Client {
             String line = null;
 
             while (!"exit".equalsIgnoreCase(line)) {
-
                 // reading from user
                 line = sc.nextLine();
 
                 // sending the user input to server
                 out.println(line);
                 out.flush();
-
-                // displaying server reply
                 System.out.println("Server replied " + in.readLine());
             }
-
             // closing the scanner object
             sc.close();
         }

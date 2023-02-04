@@ -30,7 +30,7 @@ public class ClientHandler implements Runnable {
             String line;
             while ((line = in.readLine()) != null) {
                 // print the received message from client
-                System.out.printf(" Sent from the client: %s\n", line);
+                System.out.printf("Sent from the client: %s\n", line);
                 out.println(line);
             }
         }
